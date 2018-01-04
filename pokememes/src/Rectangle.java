@@ -1,14 +1,15 @@
 import javax.swing.*;
 import java.awt.*;
 
-/**  
- *  Author: Natalie Watts
- *  Neumont Univ
- *  Date: November 2012
- */
+
 public class Rectangle extends JComponent  {
 
-    /**    All values are measured in pixels:  x - horizonal location,  y - vertical location,  
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	/**    All values are measured in pixels:  x - horizonal location,  y - vertical location,  
      *     w - the width,  h - the height,   color - black
      */
     public Rectangle(int x, int y, int w, int h)  {

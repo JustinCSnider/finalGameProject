@@ -1,4 +1,4 @@
-package pokememes;
+
 //import java.awt.Toolkit.*;
 import java.awt.*;
 import javax.imageio.ImageIO;
@@ -8,7 +8,11 @@ import java.awt.event.*;
 import java.awt.Image;
 
 public class EzImage extends JComponent implements MouseListener {
-//implements java.awt.image.ImageObserver, MouseListener  {
+/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	//implements java.awt.image.ImageObserver, MouseListener  {
 	private Image content;
 
 //Constructor methods
@@ -16,7 +20,7 @@ public class EzImage extends JComponent implements MouseListener {
 		super();
 		setBounds(0, 0, 10, 10);
 		addMouseListener(this);
-	} 
+	}
 
 	public EzImage(int x, int y, int w, int h)  {
 		super();

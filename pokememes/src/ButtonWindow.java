@@ -15,7 +15,11 @@ public abstract class ButtonWindow
     
     protected class ButtonWindowFrame extends JFrame implements ActionListener
     {
-        //------- Instance Variables ------------------------------------
+        /**
+		 * 
+		 */
+		private static final long serialVersionUID = 1L;
+		//------- Instance Variables ------------------------------------
         private JButton actButton;
         private Container pane;
         private JButton resetButton, inputButton;
