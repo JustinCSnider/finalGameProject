@@ -1,15 +1,19 @@
 
 
-//import java.awt.Color;
+import java.awt.Color;
 import javax.swing.*;
 
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-public class UI
+public class UI extends EzImage
 {
     public JFrame Start;
     public JFrame win ;
     
+    public UI(int x, int y, int w, int h, String i) {
+    	super(x,y,w,h,i);
+    	
+    }
     
     
     public UI(){
@@ -18,10 +22,15 @@ public class UI
       win.setLayout(null);
       win.setBounds(0,0,600,600);
       
+      
+      Rectangle b = new Rectangle(0,0,900,900);
+      b.setBackground(Color.RED);
+      win.add(b,0);
+      
       JButton start;
       start = new JButton("START");
       start.setBounds(150,250,300,50);
-      win.add(start,0);
+      b.add(start,0);
       win.setVisible(true);
       
       start.addActionListener(new ActionListener() {
@@ -30,11 +39,10 @@ public class UI
     	  }
       });
       
+      //UI logo = new UI(50,50,40,40,".PNG");
+      //win.add(logo,0);
+      
         
-         
-//        Rectangle tan = new Rectangle(0,0,900,900);
-//        tan.setBackground(Color.black);
-//        win.add(tan,0);
         
         
         
@@ -50,21 +58,25 @@ public class UI
      Start.setLayout(null);
    	 Start.setBounds(600,0,600,600);
    	 Start.setVisible(true);
-   	 
+   	Rectangle b = new Rectangle(0,0,900,900);
+    b.setBackground(Color.RED);
+    Start.add(b,0);
+    
    	 JButton fight;
         fight = new JButton("FIGHT");
         fight.setBounds(150,200,300,50);
-        Start.add(fight,0);
+        b.add(fight,0);
         fight.addActionListener(new ActionListener() {
     	  public void actionPerformed(ActionEvent e) {
     		  
     	  }
       });
         
+        
         JButton parties;
          parties = new JButton("PARTIES");
         parties.setBounds(150,300,300,50);
-        Start.add(parties,0);
+        b.add(parties,0);
         parties.addActionListener(new ActionListener() {
       	  public void actionPerformed(ActionEvent e) {
     		  
@@ -74,14 +86,14 @@ public class UI
         JButton close;
         close = new JButton("CLOSE");
         close.setBounds(150,400,300,50);
-        Start.add(close,0);
+        b.add(close,0);
         close.addActionListener(new ActionListener() {
       	  public void actionPerformed(ActionEvent e) {
     		  Start.dispose();
     		  win.dispose();
       	  }
         });
-        
+       
 	}
 	
 
