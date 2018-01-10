@@ -73,11 +73,11 @@ public class UI extends EzImage
       });
         
         
-        JButton parties;
-         parties = new JButton("PARTIES");
-        parties.setBounds(150,300,300,50);
-        b.add(parties,0);
-        parties.addActionListener(new ActionListener() {
+        JButton pokememe;
+         pokememe = new JButton("POKEMEMES");
+        pokememe.setBounds(150,300,300,50);
+        b.add(pokememe,0);
+        pokememe.addActionListener(new ActionListener() {
       	  public void actionPerformed(ActionEvent e) {
     		  
       	  }
