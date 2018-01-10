@@ -4,6 +4,7 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 
 public class FightUI {
 public JFrame win;
@@ -18,7 +19,7 @@ public JFrame win;
 	      b.setBackground(Color.gray);
 	      win.add(b,0);
 	      
-	      //add jlabel
+	     
 	      
 	      JButton attack;
 	      attack = new JButton("Attack");
@@ -34,6 +35,14 @@ public JFrame win;
 	      catch1 = new JButton("Catch");
 	      catch1.setBounds(340,470,300,50);
 	      b.add(catch1,0);
+	      
+	      JLabel event;
+	      event = new JLabel("Blah blah");
+	      event.setLocation(10,470);
+	      event.setLayout(null);
+	      b.add(event,0);
+	      event.setVisible(true);
+	      
 	      
 	      win.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	      win.setVisible(true);
