@@ -93,7 +93,7 @@ public class UI extends EzImage
     		  win.dispose();
       	  }
         });
-       
+      
 	}
 	
 
