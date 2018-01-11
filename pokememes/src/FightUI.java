@@ -94,7 +94,7 @@ public JFrame win;
 	      catch1.setBounds(340,470,300,50);
 	      catch1.addActionListener(new ActionListener() {
 	    	  public void actionPerformed(ActionEvent e) {
-	    		 
+	    		
 	    	  }
 	      });
 	      b.add(catch1,0);
